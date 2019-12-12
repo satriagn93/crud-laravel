@@ -27,6 +27,7 @@
                         <th>Jenis Kelamin</th>
                         <th>Agama</th>
                         <th>Alamat</th>
+                        <th>AKSI</th>
                     </tr>
                     @foreach($data_siswa as $siswa)
                     <tr>
@@ -35,6 +36,7 @@
                         <td>{{$siswa->jenis_kelamin}}</td>
                         <td>{{$siswa->agama}}</td>
                         <td>{{$siswa->alamat}}</td>
+                        <td><a href="/siswa/{{$siswa->id}}/edit" class="btn btn-warning btn-sm">Edit</a></td>
                     </tr>
                     @endforeach
                 </table>
@@ -77,8 +79,6 @@
                                 <label for="exampleFormControlTextarea1">Alamat</label>
                                 <textarea name="alamat" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
