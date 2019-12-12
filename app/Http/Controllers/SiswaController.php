@@ -32,7 +32,7 @@ class SiswaController extends Controller
     {
         $siswa = \App\Siswa::find($id);
         $siswa->update($request->all());
-        return redirect('/siswa')->with('sukses','Data berhasil di update');
+        return redirect('/siswa')->with('update','Data berhasil di update');
 
     }
 
@@ -40,7 +40,7 @@ class SiswaController extends Controller
     {
         $siswa = \App\Siswa::find($id);
         $siswa->delete($siswa);
-        return redirect('/siswa')->with('sukses','Data berhasil dijapus');
+        return redirect('/siswa')->with('delete','Data berhasil dihapus');
     }
 
 }
