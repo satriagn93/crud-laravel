@@ -28,9 +28,10 @@
 
                         <div class="panel">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Data Siswa</h3>
+                                <h3 class="panel-title">Data Siswas</h3>
                                 <div class="right">
-                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal"> <i class="lnr lnr-plus-circle"></i> </button>
+                                    <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus-square"> New </i></a>
+{{--                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal"> <i class="lnr lnr-plus-circle"></i> </button>--}}
                                 </div>
 
                             </div>
