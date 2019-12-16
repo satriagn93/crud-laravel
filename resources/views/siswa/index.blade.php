@@ -28,7 +28,7 @@
 
                         <div class="panel">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Data Siswas</h3>
+                                <h3 class="panel-title">Data Siswa</h3>
                                 <div class="right">
                                     <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus-square"> New </i></a>
 {{--                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal"> <i class="lnr lnr-plus-circle"></i> </button>--}}
@@ -50,8 +50,8 @@
                                     <tbody>
                                     @foreach($data_siswa as $siswa)
                                         <tr>
-                                            <td>{{$siswa->nama_depan}}</td>
-                                            <td>{{$siswa->nama_belakang}}</td>
+                                            <td><a href="/siswa/{{$siswa->id}}/profile">{{$siswa->nama_depan}}</a></td>
+                                            <td><a href="/siswa/{{$siswa->id}}/profile">{{$siswa->nama_belakang}}</a></td>
                                             <td>{{$siswa->jenis_kelamin}}</td>
                                             <td>{{$siswa->agama}}</td>
                                             <td>{{$siswa->alamat}}</td>

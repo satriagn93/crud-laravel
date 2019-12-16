@@ -27,4 +27,6 @@ Route::group(['middleware' => 'auth'],function (){
     Route::post('/siswa/{id}/update','SiswaController@update');
     Route::get('/siswa/{id}/delete','SiswaController@delete');
 
+//    profile
+    Route::get('/siswa/{id}/profile','SiswaController@profile');
 });
