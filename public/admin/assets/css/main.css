@@ -64,10 +64,11 @@ footer {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  width: 260px;
+  width: 240px;
   height: 100%;
   float: left;
   background-color: #2B333E;
+  /*background-image: linear-gradient(to top, #000000 0%, #53346D 51%, #000000 100%);*/
   position: fixed;
   left: 0; }
 
@@ -1177,7 +1178,7 @@ ul.activity-list > li {
   .profile-header .profile-main {
     position: relative;
     padding: 15px;
-    background-image: url("../img/aaa.png");
+    background-image: url("../img/bgfoto.jpeg");
     background-repeat: no-repeat;
     background-size: cover; }
   .profile-header .name {

@@ -13,7 +13,7 @@
                             <div class="profile-header">
                                 <div class="overlay"></div>
                                 <div class="profile-main">
-                                    <img src="{{$siswa->getAvatar()}}" class="img-circle" alt="Avatar" height="120" width="120">
+                                    <img src="{{$siswa->getAvatar()}}" class="img" alt="Avatar" height="120" width="110">
                                     <h3 class="name">{{$siswa -> nama_depan}}</h3>
                                     <span class="online-status status-available">Available</span>
                                 </div>
