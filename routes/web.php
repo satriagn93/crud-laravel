@@ -12,15 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+//    return view('home');
+    return redirect('/dashboard');
 });
 
 Route::get('/login','AuthController@login')->name('login');
 Route::post('/postlogin','AuthController@postlogin');
 Route::get('/logout','AuthController@logout');
 
-Route::group(['middleware' => 'auth'],function (){
-    Route::get('/dashboard','DashboardController@index');
+Route::group(['middleware' => ['auth','checkRole:admin']],function (){
     Route::get('/siswa','SiswaController@index');
     Route::post('/siswa/create','SiswaController@create');
     Route::get('/siswa/{id}/edit','SiswaController@edit');
@@ -29,4 +29,8 @@ Route::group(['middleware' => 'auth'],function (){
 
 //    profile
     Route::get('/siswa/{id}/profile','SiswaController@profile');
+});
+
+Route::group(['middleware' => ['auth','checkRole:admin,siswa']],function (){
+    Route::get('/dashboard','DashboardController@index');
 });

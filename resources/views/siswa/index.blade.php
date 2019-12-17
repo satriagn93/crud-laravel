@@ -94,6 +94,10 @@
                             <input name="nama_belakang" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Belakang">
                         </div>
                         <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="form-group">
                             <label for="exampleFormControlSelect1">Jenis Kelamin</label>
                             <select name="jenis_kelamin" class="form-control" id="exampleFormControlSelect1">
                                 <option value="L">Laki-Laki</option>
